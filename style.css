@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  
+  text-decoration: none;
+  background-color: #f7efe8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+:root{
+    --azul: #2F2FA8;
+}
+
+.container{
+    box-sizing: 10px black;
+    margin: 0 auto;
+    margin-top: 90px;
+    width: 450px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+     padding: 20px;
+ }
+
+
+.entrada{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.info{
+    margin: 20px 30px;
+}
+.info input{
+    width: 165px;
+    padding: 10px 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.notas input{
+    padding: 3px;
+    border: 1px solid #000814;
+    border-radius: 5px; 
+    width: 340px;
+    height: 30px;
+    margin: 5px;
+
+
+}
+
+button{
+    color: white;
+    border: none;
+    border-radius: 4px;
+    background-color:#000814;
+    margin-top: 20px;
+    padding: 10px;
+    width: 340px;
+}
+
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:#000814;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.menu ul {
+    
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.content {
+     
+    margin-top: 20px;
+    padding: 10px;
+    
+}
+#content2{
+  display: none;
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu a:hover{
+  filter: drop-shadow(0 0 1rem #fff);
+}
+
+
+
+
+.table-container {
+  position: relative;
+  padding-bottom: 50px;
+
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  margin-left: 20px;
+  width: 510px;
+  
+}
+.botao-novamente{
+  position: absolute;
+  bottom: 5px;
+  left: 50%; 
+  transform: translateX(-50%); 
+  background-color: #000814;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 7px;
+}
+
+table {
+  width: 100%;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+p,span{
+  font-size: 15px;
+  
+}
+
+/* Resto do seu estilo CSS */
+
+/* Estilos para diferentes situações */
+.linha-verde {
+  background-color: #40916C; /* Verde */
+  color: #000814;
+  font-weight: 300;
+}
+
+.linha-amarela {
+  background-color: #E0B014; /* Amarelo */
+  color: #000814;
+  font-weight: 300;
+}
+
+.linha-vermelha {
+  background-color: #9e2a2b; /* Vermelho */
+  color: #000814;
+  font-weight: 300;
+}

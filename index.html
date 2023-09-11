@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notas Bimestrais</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="menu">
+    <ul>
+        <li><a href="#" onclick="mostrarConteudo('content1')">Login</a></li>
+        <li><a href="#" onclick="mostrarConteudo('content2')">Boletim</a></li>
+    </ul>
+  </div>
+  
+  <div class="content" id="content1">
+    <div class="container">
+      <div class="entrada">
+          <h1>Notas</h1>
+          <form>
+              <div class="info">
+                  <input id="nome" type="text" placeholder="Nome:">
+                  <input id="turma" type="text" placeholder="Turma:">
+              </div>
+              <div class="notas">
+                  <input type="number" placeholder="Nota 1" ><br>
+                  <input type="number" placeholder="Nota 2" ><br>
+                  <input type="number" placeholder="Nota 3" ><br>
+                  <input type="number" placeholder="Nota 4" >
+              </div>
+          </form>
+          <button type="button" onclick="calcularMedia()">Enviar</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content" id="content2">
+    <div class="table-container">
+      <table>
+        <tr>
+          <th>Nome</th>
+          <th>Nota 1</th>
+          <th>Nota 2</th>
+          <th>Nota 3</th>
+          <th>Nota 4</th>
+          <th>Média</th>
+          <th>Situação</th>
+        </tr>
+        <tr>
+          
+          <td colspan="4"></td>
+        </tr>
+      </table>
+      
+      <button class="botao-novamente" type="button" onclick="reentrarInformacoes()">Digitar Novamente</button>
+      
+      <p>Média Geral: <span id="media-geral">0.00</span></p>
+      <p><span id="alunos-abaixo-media"></span></p>
+
+
+
+    </div>
+  </div>
+</body>
+</html>
